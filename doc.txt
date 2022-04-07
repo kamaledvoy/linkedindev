@@ -1,0 +1,5 @@
+killall -9 node
+
+
+https://tailwindcss.com/docs/guides/nuxtjs
+https://v3.nuxtjs.org/guide/directory-structure/pages
