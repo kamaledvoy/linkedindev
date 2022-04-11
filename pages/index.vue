@@ -1,16 +1,15 @@
-<template>
-<h1 class="text-3xl font-bold underline text-blue-600">
+
+
+<template> 
+    <h1 class="text-3xl font-bold underline text-blue-600">
     Hello world!
   </h1>
-
 </template>
 
-<script>
-export default {
-
-}
+<script setup>
+definePageMeta({
+  title: 'My home page',
+})
+const route = useRoute()
+console.log(route.meta.title) 
 </script>
-
-<style>
-
-</style>
