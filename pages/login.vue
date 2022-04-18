@@ -1,17 +1,19 @@
 <template>
-  <NuxtLayout :name="layout">
-    <NuxtPage />
-  </NuxtLayout>
+<h1>Custom login page</h1>
 </template>
 
+
 <script>
+import { defineComponent } from '@vue/composition-api'
+
 definePageMeta({
-  title: "Login page",
-  layout: "custom",
-});
+  title: "Custom Login Page",
+  layout: "custom"
+})
 
-
+export default defineComponent({
+  setup() {
+    
+  },  
+})
 </script>
-
-<style>
-</style>

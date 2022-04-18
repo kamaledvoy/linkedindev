@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NuxtLayout>
+    <NuxtLayout :name="layout">
       <!-- <NuxtWelcome /> -->
       <NuxtPage />
     </NuxtLayout>
@@ -9,6 +9,10 @@
 
 <script setup>
 import "@/assets/scss/main.scss";
+
+definePageMeta({
+  layout: 'default'
+})
 
 const route = useRoute();
 console.log(route.meta.title);

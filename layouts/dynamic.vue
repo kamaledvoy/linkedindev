@@ -1,22 +1,28 @@
 <template>
   <div class="min-h-screen flex flex-col justify-start">
-    <header>
+    <div>
       <slot name="header"></slot>
-    </header>
+    </div>
     <main>
       <slot />
     </main>
-    <footer>
+    <div>
       <slot name="footer"></slot>
-    </footer>
+    </div>
   </div>
 </template>
-<script setup>
-export default {
-    created() {
-        console.log("Dynamic Layout Created");
-    }
-}
+
+<script>
+import { defineComponent } from '@vue/composition-api'
+
+export default defineComponent({
+  setup() {
+    
+  },
+  created() {
+    console.log('Dynamic layout created')
+  }
+})
 </script>
 
 <style>

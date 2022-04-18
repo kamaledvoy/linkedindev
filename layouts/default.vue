@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen flex flex-col justify-start">
     <HeaderComponent />
-    <main>
+    <main class="flex">
       <slot />
     </main>
     <FooterComponent />
