@@ -2,9 +2,8 @@ import { defineNuxtConfig } from 'nuxt3'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({ 
-  meta: {
-    title: 'Linkedin Dev',
-  },
+  
+  router: { trailingSlash: true },
   components: true,
     css: ["@/assets/scss/main.scss"],
     build: {

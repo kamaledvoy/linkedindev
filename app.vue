@@ -11,8 +11,8 @@
 import "@/assets/scss/main.scss";
 
 definePageMeta({
-  layout: 'default'
-})
+  layout: "default",
+});
 
 const route = useRoute();
 console.log(route.meta.title);

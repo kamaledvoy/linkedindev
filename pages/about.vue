@@ -1,13 +1,15 @@
 <template>
-  <h1>About Page</h1>
+  <div>
+    <h1>About Page</h1>
+  </div>
 </template>
 
-<script>
-export default {
-
-}
+<script setup>
+definePageMeta({
+  title: "About Page",
+  layout: "default",
+});
 </script>
 
 <style>
-
 </style>
